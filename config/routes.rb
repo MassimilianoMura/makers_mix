@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  root to: "welcome#index"
+
+  get 'welcome' => 'welcome#index'
+  get 'june15/list' => 'june15#list'
+  get 'june15/pairs_day1' => 'june15#pairs'
+  get 'june15/pairs_day2' => 'june15#pairs'
+  get 'june15/pairs_day3' => 'june15#pairs'
+  get 'june15/profile' => 'june15#profile'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
