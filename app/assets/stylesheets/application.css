@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+#general_welcome {
+  background-color: #FDF6F6;
+  background-image: url('/assets/menlayer1.png'), url('/assets/menlayer2.png');
+}
+
+.vertical-offset-100{
+  padding-top:40px;
+}
+
+.container {
+  padding-top: 50px;
+  float: right;
+}
