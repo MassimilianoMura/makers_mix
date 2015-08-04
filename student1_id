@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20150803172525_add_student1_id_to_pairings.rb
