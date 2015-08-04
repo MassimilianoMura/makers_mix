@@ -1,0 +1,17 @@
+<a href='/pairs/new'> Generate today's pairs </a>
+<div class = center-block>
+  <ul>
+    <% if @students.any? %>
+      <% @students.each do |student| %>
+        <li>
+          <%= link_to "#{student.username}\'s profile", [path reference] %>
+          <!-- AVATAR? -->
+        </li>
+  </ul>
+    <% else %>
+      No students in the cohort yet!
+    <% end %>
+</div>
+
+<!-- controller code
+@date = [Today's date] -->
