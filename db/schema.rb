@@ -11,23 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803172614) do
+ActiveRecord::Schema.define(version: 20150804102044) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "pairings", force: :cascade do |t|
     t.date     "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "student_id"
-    t.string   "belongs_to"
-    t.string   "student1"
-    t.string   "source"
-    t.string   "students"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "student1_id"
+    t.integer  "student2_id"
   end
-
-  add_index "pairings", ["student_id"], name: "index_pairings_on_student_id", using: :btree
 
   create_table "students", force: :cascade do |t|
     t.string   "name"
@@ -35,5 +30,4 @@ ActiveRecord::Schema.define(version: 20150803172614) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "pairings", "students"
 end
