@@ -1,0 +1,19 @@
+<a href='/june15/pairs'> Generate today's pairs </a>
+<div class = center-block>
+
+  <% if @students.any? %>
+    <% @students.each do |student| %>
+      <ul>
+        <li>
+          <%= link_to "#{student.name}", june15_profile_path  %>
+          
+          <div class="avatar"></div>
+          <!-- CONNECT AJAX CALL IN JAVASCRIPT TO GET AVATAR.  -->
+        </li>
+      </ul>
+    <% end %>
+
+    <% else %>
+      No students in the cohort yet!
+    <% end %>
+</div>
