@@ -1,6 +1,6 @@
 body{
     background-color: #67BACA;  background-color: #444;
-    background: url(menlayer1.png),url(menlayer2.png); background-color: #67BACA;
+    background: url(menlayer1.png),url(menlayer2.png);
 }
 
 .vertical-offset-100{
@@ -24,6 +24,11 @@ body{
 
 .vertical-offset-100{
     padding-top:100px;
+}*/
+
+/*.container {
+  padding-top: 50px;
+  float: right;
 }*/
 
 
